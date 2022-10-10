@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../CustomButton/Button";
 import "../../index.css";
+
+
 const Header = () => {
  return (
   <nav className="flex justify-between items-center my-2 py-2 px-1 mx-8">
    <img src="/assets/logo.svg" alt="logo" className="items-center"/>
+   <img src="/assets/icon-hamburger.svg" alt="hamburger" className="lg:hidden block"/>
    <ul className=" hidden lg:flex justify-evenly items-center text-black">
     <li className="flex px-3 hover:text-gray-400">
      <Link to="/">Pricing</Link>
