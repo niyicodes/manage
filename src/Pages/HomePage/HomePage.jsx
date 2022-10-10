@@ -1,5 +1,6 @@
 import React from "react";
 import AbtList from "../../Components/AbtList/AbtList";
+import Card from "../../Components/Card/Card";
 import Button from "../../Components/CustomButton/Button";
 import data from "../../ListData";
 
@@ -27,7 +28,9 @@ const HomePage = () => {
    {/* whats different? */}
    <section className="hero-2 md:flex gap-4 mt-14 justify-center lg:my-5">
     <div className="about">
-     <h3 className="text-3xl text-sky-900 font-bold pb-4">What's different about Manage?</h3>
+     <h3 className="text-3xl text-sky-900 font-bold pb-4">
+      What's different about Manage?
+     </h3>
      <p className="text-lg text-gray-500 text-justify">
       Manage provides all the functionality your team needs, without the
       complexity. Our software is tailor-made for modern digital product teams.
@@ -39,6 +42,29 @@ const HomePage = () => {
        <AbtList key={num} num={num} title={title} paragraph={paragraph} />
       );
      })}
+    </div>
+   </section>
+   {/* what they have said */}
+   <section className="said">
+    <h3 className="text-center my-12 text-3xl lg:text-5xl text-blue-900 font-bold">
+     What they've said
+    </h3>
+    <div className="testimonials grid-cols-1 grid lg:grid-cols-3 mt-7 mb-4 gap-6">
+     <Card
+      img="/assets/avatar-richard.png"
+      name="Richard Watts"
+      paragraph="We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+     />
+     <Card
+      img="/assets/avatar-anisha.png"
+      name="Anisha Li"
+      paragraph="We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+     />
+     <Card
+      img="/assets/avatar-shanai.png"
+      name="Ali Bravo"
+      paragraph="We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+     />
     </div>
    </section>
   </div>
