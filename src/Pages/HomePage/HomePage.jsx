@@ -7,7 +7,7 @@ import data from "../../ListData";
 const HomePage = () => {
  return (
   <div>
-   <section className="hero-1 mt-9 mb-6 md:flex gap-4 justify-center items-center">
+   <section className="hero-1 mx-8 mt-9 mb-6 md:flex gap-4 justify-center items-center">
     <div className="textarea  lg:w-2/4 sm:text-left sm:flex-col text-center">
      <h3 className="sm:text-xl md:text-2xl lg:text-6xl sm:text-center md:text-left w-full lg:w-5/6 text-blue-900 font-bold pb-6">
       Bring everyone together to build better products.
@@ -26,7 +26,7 @@ const HomePage = () => {
     </div>
    </section>
    {/* whats different? */}
-   <section className="hero-2 md:flex gap-4 mt-14 justify-center lg:my-5">
+   <section className="hero-2 mx-8 md:flex gap-4 mt-14 justify-center lg:my-5">
     <div className="about">
      <h3 className="text-3xl text-sky-900 font-bold pb-4">
       What's different about Manage?
@@ -45,7 +45,7 @@ const HomePage = () => {
     </div>
    </section>
    {/* what they have said */}
-   <section className="said">
+   <section className="said text-center mx-8">
     <h3 className="text-center my-12 text-3xl lg:text-5xl text-blue-900 font-bold">
      What they've said
     </h3>
@@ -66,6 +66,17 @@ const HomePage = () => {
       paragraph="We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
      />
     </div>
+    <Button
+     btnName="Get Started"
+     className="rounded-full bg-red-500 px-8 text-white py-3 hover:bg-red-400 my-5"
+    />
+   </section>
+   <section className="simply flex justify-around py-7 items-center bg-red-500">
+    <h3 className="text-white font-bold text-3xl w-2/5">Simplify how your team works today.</h3>
+    <Button
+     btnName="Get Started"
+     className="rounded-full bg-white px-8 text-red-900 font-semibold py-3 hover:bg-red-400 hover:text-white my-5"
+    />
    </section>
   </div>
  );

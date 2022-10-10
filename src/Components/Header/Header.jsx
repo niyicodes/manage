@@ -4,7 +4,7 @@ import Button from "../CustomButton/Button";
 import "../../index.css";
 const Header = () => {
  return (
-  <nav className="flex justify-between items-center my-2 py-2 px-1">
+  <nav className="flex justify-between items-center my-2 py-2 px-1 mx-8">
    <img src="/assets/logo.svg" alt="logo" className="items-center"/>
    <ul className=" hidden lg:flex justify-evenly items-center text-black">
     <li className="flex px-3 hover:text-gray-400">
